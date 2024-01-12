@@ -1,0 +1,37 @@
+﻿@model Eshop.Data.Account
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<dl background-color="red">
+    <dt>
+        @Html.DisplayNameFor(model => model.Username)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Username)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.FullName)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.FullName)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Email)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Email)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Phone)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Phone)
+    </dd>
+</dl>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

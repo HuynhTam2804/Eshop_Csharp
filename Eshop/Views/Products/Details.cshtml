@@ -1,0 +1,44 @@
+﻿@model Eshop.Data.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(model => model.SKU)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.SKU)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Description)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Description)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Price)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Price)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Stock)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Stock)
+    </dd>
+   
+</dl>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
